@@ -164,7 +164,34 @@ In deze handreiking hebben we een aantal scenario's uitgewerkt. De scenario's zi
 
 3. Een van de partijen in de keten maakt geen gebruik van subOIn's
 
-Situatie 1: zowel zender als ontvanger maken gebruik van subOIN's
+## Situatie 1: zowel zender als ontvanger maken gebruik van subOIN's
+
+| 1           | Zendende Partij                 | Ontvangende  Partij              | Via         | OIN in Certificaat Zender (tbv TLS) | OIN in Certificaat Ontvanger (tbv TLS) | OIN in HEADER FROM| OIN in HEADER TO    | Endpoint Zender | Endpoint Ontvanger|
+| ----------- | ------------------------- | ------------------------- | ----------- | ------------------------- | ------ | ------ | --------- | -------- | -------- |
+| Partij      | Partij                    | (tbv TLS)                 | Certificaat | Header                    | Header | Zender | Ontvanger |
+|             |                           |                           | Ontvanger   | FROM                      | TO     |        |           |
+|             |                           |                           | (tbv TLS)   |                           |        |        |           |
+| 1           | Organisatie X             | Organisatie Y             |             | 123                       | 567    | 123    | 567       | x.nl     | y.nl     |
+| 2           | Organisatie Onderdeel X.O | Organisatie Y             |             | 123  of 789                      | 567    | 789    | 567       | o.x.nl   | y.nl     |
+| 3           | Organisatie X             | Organisatie Onderdeel Y.O |             | 123                       | 567 of 890    | 123    | 890       | x.nl     | o.y.nl   |
+| 4           | Organisatie X             | Organisatie Y             | Knooppunt Y | 123                       | 567    | 123    | 567       | x.nl     | y.nl of  |
+| of 345      | of 345                    | ky.nl                     |
+| 5           | Organisatie X             | Organisatie Y             | Knooppunt X | 123                       | 567    | 123    | 567       | kx.nl    | y.nl     |
+| of 234      |
+| 6           | Organisatie X             | Organisatie Y             | Knooppunt X | 123                       | 567    | 123    | 567       | kx.nl    | ky.nl    |
+| en          | of 234                    | of 345                    |
+| Knooppunt Y |                           |                           |
+| 7           | Organisatie Onderdeel X.O | Organisatie Y             | Knooppunt X | 123                       | 567    | 789    | 567       | o.kx.nl  | ky.nl    |
+| en          | of 789                    | of 345                    |
+| Knooppunt Y | of 234                    |                           |
+| 8           | Organisatie Onderdeel X.O | Organisatie Onderdeel Y.O | Knooppunt X | 123                       | 567    | 789    | 890       | o.kx.nl  | o.y.nl   |
+| en          | of 789                    | of 345                    |
+| Knooppunt Y | of 234                    | of 890                    |
+| 9           | Organisatie Onderdeel X.O | Organisatie Onderdeel Y.O |             | 123                       | 567    | 789    | 890       | o.x.nl   | o.y.nl   |
+| of 789      | of 890                    |
+|             |                           |
+
+
 
 |
 
