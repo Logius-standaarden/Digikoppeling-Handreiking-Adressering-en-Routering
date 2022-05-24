@@ -170,11 +170,8 @@ In deze handreiking hebben we een aantal scenario's uitgewerkt. De scenario's zi
 | ----------- | ------------------------- | ------------------------- | ----------- | ------------------------- | ------ | ------ | --------- | -------- | -------- |
 | 1 | Organisatie X             | Organisatie Y             |                            | 123                | 567                 | 123 | 567        | x.nl    | y.nl          |
 | 2 | Organisatie Onderdeel X.O | Organisatie Y             |                            | 123 of 789         | 567                 | 789 | 567        | o.x.nl  | y.nl          |
-|   |
 | 3 | Organisatie X             | Organisatie Onderdeel Y.O |                            | 123                | 567 of 890          | 123 | 890        | x.nl    | o.y.nl        |
-|   |
 | 4 | Organisatie X             | Organisatie Y             | Knooppunt Y                | 123                | 567 of 345          | 123 | 567 of 345 | x.nl    | y.nl of ky.nl |
-|   |                           |                           |
 | 5 | Organisatie X             | Organisatie Y             | Knooppunt X                | 123 of 234         | 567                 | 123 | 567        | kx.nl   | y.nl          |
 | 6 | Organisatie X             | Organisatie Y             | Knooppunt X en Knooppunt Y | 12of 2343          | 567 of 345          | 123 | 567        | kx.nl   | ky.nl         |
 | 7 | Organisatie Onderdeel X.O | Organisatie Y             | Knooppunt X en Knooppunt Y | 123 of 789 of 234  | 567 of 345          | 789 | 567        | o.kx.nl | ky.nl         |
