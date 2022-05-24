@@ -49,16 +49,16 @@ Knelpunten bij gebruik van intermediairs / SAAS oplossingen zijn:
 Oplossingen
 -----------
 
-**1 Bevoegdheid intermediair via afspraken**
+## **1 Bevoegdheid intermediair via afspraken**
 
-|![intermediair](intermediair.jpg) |
+![intermediair](intermediair.jpg) 
 
 Een intermediair in de rol van 'knooppunt' krijgt de bevoegdheid om dienst van B af te nemen (op basis van of passend in toepasselijke regelgeving). Voor B blijft achterliggende partij A buiten beeld. Of A bevoegd is om de dienst via de Intermediair af te nemen bepaalt de Intermediair op basis van de regelgeving en verantwoordelijkheid;\
 (een voorbeeld is een sector loket)
 
 (Bron: [Digikoppeling Identificatie en Authenticatie 1.4.2 ](https://publicatie.centrumvoorstandaarden.nl/dk/idauth/) )
 
-**2 Bevoegdheid intermediair/SAAS partij door verlenen certificaat**
+## **2 Bevoegdheid intermediair/SAAS partij door verlenen certificaat**
 
 Organisatie A geeft een certificaat aan de SAAS partij waarmee de SAAS partij zich naar buiten toe identificeert als A. Voor partij B is het dan alsof deze direct met A communiceert
 
@@ -70,7 +70,7 @@ Nadeel van deze manier van werken is dat de SAAS leverancier over een 'sleutelbo
 
 (Dit vraagt om specifieke aandacht voor certificaatbeheer en beveiligingsaspecten / mogelijk misbruik, denk hierbij bv aan het intrekken van een machtiging)
 
-**3 Bevoegdheid intermediair/SAAS partij door 'machtigen'**
+## **3 Bevoegdheid intermediair/SAAS partij door 'machtigen'**
 
 3a. In dit geval acteert de SAAS partij onder het eigen OIN, Voor partij B is het duidelijk dat zij communiceren met de SAAS partij. Onderling afspraken bepalen of de SAAS partij gemachtigd is om namens A bepaalde diensten te gebruiken;
 
