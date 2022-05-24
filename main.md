@@ -152,19 +152,15 @@ In deze situatie worden knooppunten (bv SAAS partijen) gemachtigd om namens ontv
 
 
 
-Bijlage 1. Voorbeelden van de werking
+Bijlage 1. Voorbeeld van routering
 =====================================
 
 
 In deze handreiking hebben we een aantal scenario's uitgewerkt. De scenario's zijn hier in detail uitgewerkt.
 
-1. Partijen maken beide gebruik van subOINS voor het identificeren van organisatie onderdelen
+## Vb Situatie : zowel zender als ontvanger maken gebruik van subOIN's
 
-2. Een van de partijen in de keten maakt geen gebruik van subOIn's
-
-3. Een van de partijen in de keten maakt geen gebruik van subOIn's
-
-## Situatie 1: zowel zender als ontvanger maken gebruik van subOIN's
+![adressering - zowel zender als ontvanger maken gebruik van subOIN's](media/adressering2.png)
 
 | 1           | Zendende Partij                 | Ontvangende  Partij              | Via         | OIN in Certificaat Zender (tbv TLS) | OIN in Certificaat Ontvanger (tbv TLS) | OIN in HEADER FROM| OIN in HEADER TO    | Endpoint Zender | Endpoint Ontvanger|
 | ----------- | ------------------------- | ------------------------- | ----------- | ------------------------- | ------ | ------ | --------- | -------- | -------- |
