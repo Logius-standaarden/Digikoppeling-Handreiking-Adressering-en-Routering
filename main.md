@@ -93,230 +93,26 @@ Over het gebruik van subOIN's voor adresseren en routeren bestaan verschillende 
 
 ## 3. Wat zijn de regels die partijen met elkaar moeten afspreken over het routeren en adresseren van berichten?
 
-In deze handreiking hebben we een aantal scenario's uitgewerkt. De scenario's zijn in detail uitgewerkt in bijlage 1.
-
-|  |  |
-
-**(Sub)OIN**
-
- |
-
-**(Sub)OIN**
-
- |
-
-**(Sub)OIN**
-
- |
-
-**(Sub)OIN**
-
- |
-|
-
-**Nr**
-
- |
-
-**Type**
-
- |
-
-**Verzender**
-
- |
-
-**Knooppunt A\
-*1**
-
- |
-
-**Knooppunt B\
-*2**
-
- |
-
-**Ontvanger**
-
- |
-|
-
-1
-
- |
-
-Direct
-
- |
-
-123
-
- |  |  |
-
-456
-
- |
-|
-
-2
-
- |
-
-Via alleen A (eigen OIN A)
-
- |
-
-123
-
- |
-
-111
-
- |
-
-nvt
-
- |
-
-456
-
- |
-|
-
-3
-
- |
-
-Via alleen A (A gebruikt OIN verzender)
-
- |
-
-123
-
- |
-
-123
-
- |
-
-nvt
-
- |
-
-456
-
- |
-|
-
-4
-
- |
-
-Via alleen B (eigen OIN B)
-
- |
-
-123
-
- |
-
-nvt
-
- |
-
-222
-
- |
-
-456
-
- |
-|
-
-5
-
- |
-
-Via alleen B (B gebruikt OIN ontvanger)
-
- |
-
-123
-
- |
-
-nvt
-
- |
-
-456
-
- |
-
-456
-
- |
-|
-
-6
-
- |
-
-Via A-B (eigen OIN A,B)
-
- |
-
-123
-
- |
-
-111
-
- |
-
-222
-
- |
-
-456
-
- |
-|
-
-7
-
- |
-
-Via A-B (gebruikt OIN verzender, ontvanger)
-
- |
-
-123
-
- |
-
-123
-
- |
-
-456
-
- |
-
-456
-
- |
-|  |
+In deze handreiking zijn hieronder een aantal scenario's uitgewerkt: (zie ook bijlage 1).
+
+![adressering](media/adressering.png)
+
+|     |                                             | (Sub)OIN  | (Sub)OIN    | (Sub)OIN    | (Sub)OIN  |
+| --- | ------------------------------------------- | --------- | ----------- | ----------- | --------- |
+| Nr  | Type                                        | Verzender | Knooppunt A | Knooppunt B | Ontvanger |
+|||| \*1 | \*2                                         |
+| 1   | Direct                                      | 123       |             |             | 456       |
+| 2   | Via alleen A (eigen OIN A)                  | 123       | 111         | nvt         | 456       |
+| 3   | Via alleen A (A gebruikt OIN verzender)     | 123       | 123         | nvt         | 456       |
+| 4   | Via alleen B (eigen OIN B)                  | 123       | nvt         | 222         | 456       |
+| 5   | Via alleen B (B gebruikt OIN ontvanger)     | 123       | nvt         | 456         | 456       |
+| 6   | Via A-B (eigen OIN A,B)                     | 123       | 111         | 222         | 456       |
+| 7   | Via A-B (gebruikt OIN verzender, ontvanger) | 123       | 123         | 456         | 456       |
 
 *1 Knooppunt A verzendt 'namens' verzender
 
- |  |  |  |  |
-|  |
-
 *2 Knooppunt B ontvangt 'namens' ontvanger
 
- |  |  |  |  |
-|  |  |  |  |  |  |
 
 *1 Direct*
 
