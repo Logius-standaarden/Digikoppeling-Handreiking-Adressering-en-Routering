@@ -212,5 +212,4 @@ Aandachtspunten:
 
 - Een Organisatie Onderdeel is een uniek te identificeren systeem binnen de organisatie
 
-- 4 nader uitwerken transparant en niet transparante intermediair
 
