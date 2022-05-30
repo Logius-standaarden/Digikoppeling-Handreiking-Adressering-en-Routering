@@ -182,10 +182,32 @@ In deze handreiking hebben we een aantal scenario's uitgewerkt. De scenario's zi
 
 **Digipoort -- Routeermechanisme (vereenvoudigd)**
 
+![Digipoort](media/Digipoort.png)
+
 **Routeertabel**
+
+| naam              | identiteit | berichtsoort | intermediair | endpoint ontvanger |
+| ----------------- | ---------- | ------------ | ------------ | ------------------ |
+| Overheidspartij A | OIN:123    | factuur      |              | oA.nl              |
+| Overheidspartij B | OIN:456    | factuur      | OIN: 222     |                    |
+| Intermediair A    | OIN:222    | factuur      |              | ia.nl              |
+| Accountant        | KvK:333    | order        |              | x@ac.nl            |
+| Bedrijf A         | BTW:123    | order        | KvK:333      |                    |
+| Bedrijf B         | KvK:444    | order        | KvK:333      |                    |
+| Bedrijf C         | KvK:777    | order        |              | bC.nl              |
 
 
 **OIN matrix (al het verkeer loopt over Digipoort)**
+
+| #      | Zendende | Ontvan-gende | Bericht | ID in PKIo Zender è Digipoort | ID  in PKIo  Ontvanger ç Digipoort | ID Belang-hebbende (bericht) | ID  Ont-vanger (bericht) | Endpoint | Endpoint |
+| ------ | -------- | ------------ | ------- | ----------------------------- | ---------------------------------- | ---------------------------- | ------------------------ | -------- | -------- |
+| Partij | Partij   | type         | Zender  | Ontvanger                     |
+| 1      | OIN:123  | BTW:123      | order   | OIN:123                       | KvK:333                            | OIN:123                      | BTW:123                  | oA.nl    | x@ac.nl  |
+| 2      | BTW:123  | OIN:123      | factuur | KvK:333                       | OIN:123                            | BTW:123                      | OIN:123                  | x@ac.nl  | oA.nl    |
+| 3      | OIN:456  | KvK:444      | order   | OIN:456                       | KVK:333                            | OIN:123                      | KvK:444                  | oB.nl    | x@ac.nl  |
+| 4      | KvK:444  | OIN:456      | factuur | KvK:333                       | OIN:222                            | KvK:444                      | OIN:456                  | x@ac.nl  | ia.nl    |
+| 5      | OIN:123  | KvK:777      | order   | OIN:123                       | KvK:777                            | OIN:123                      | KvK:777                  | oA.nl    | bC.nl    |
+| 6      | KvK:777  | OIN:123      | factuur | KvK:777                       | OIN:123                            | KvK:777                      | OIN:123                  | bC.nl    | oA.nl    |
 
 
 Aandachtspunten:
