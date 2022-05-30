@@ -1,13 +1,11 @@
 # Handreiking Adressering en Routering
 _Status : Draft_
 
-Doel van de Handreiking
-=======================
+# Doel van de Handreiking
 
 De handreiking heeft tot doel organisaties een hulpmiddel te bieden hoe om te gaan met adresseren en routeren en het gebruik van het OIN hierbij.
 
-Welke vragen worden beantwoord
-==============================
+# Welke vragen worden beantwoord
 
 Deze handreiking beschrijft wat we verstaan onder adresseren en routeren en op welke manier het OIN hierbij een rol speelt. Verder beschrijven we in detail hoe OIN's en subOIN's gebruikt kunnen worden in een berichtenketen.
 
@@ -31,8 +29,8 @@ De volgende vragen komen aan de orde:
 
 - Wat is de rol van certificaten bij routeren en adresseren
 
-Welke onderdelen worden besproken
-=================================
+# Welke onderdelen worden besproken
+
 
 - Berichtenverkeer (bevragingen en meldingen)
 
@@ -40,8 +38,8 @@ Welke onderdelen worden besproken
 
 
 
-Omgeving waar de handreiking voor geldt
-=======================================
+# Omgeving waar de handreiking voor geldt
+
 
 *Routeren* van berichten is nodig als een ontvanger van een bericht meerdere endpoints of knooppunten kent. De ontvanger bezit een of meerdere knooppunten waarop berichten voor de organisatie -en zijn onderdelen- binnenkomen. Op basis van attributen op de envelop-- en eventueel- de inhoud- van het bericht routeert het knooppunt het bericht naar het juiste endpoint. Een knooppunt kan ook op basis van de kenmerken van de *zender* een bericht routeren naar het juiste endpoint. In beide gevallen maakt de ontvanger gebruik van een routeringstabel
 
@@ -49,8 +47,7 @@ Organisaties die meerdere berichten-endpoints hebben, kunnen er voor kiezen om e
 
 Als ontvanger of  zender geen gebruik willen maken van subOIN's moet de *afzender* en/of het *adres* van het endpoint uit andere kenmerken van het bericht worden afgeleid. 
 
-Beschrijving van de werking
-===========================
+# Beschrijving van de werking
 
 ## 1. Het OIN wordt zowel gebruik voor authenticatie als voor adressering.
 
@@ -115,11 +112,11 @@ In deze handreiking zijn hieronder een aantal scenario's uitgewerkt: (zie ook bi
 *2 Knooppunt B ontvangt 'namens' ontvanger
 
 
-*1 Direct*
+### *1 Direct*
 
 In deze situatie gebruikt de verzender het eigen (Sub)OIN als afzender en het (Sub)OIN van de ontvanger als bestemming. Identificatie en Authenticatie geschiedt op basis van de beide TLS certificaten. Signing en encryptie kan gebruikt worden voor end-to-end beveilging
 
-*2 Via Knooppunt A (waarbij eigen OIN van A gebruikt wordt voor TLS verbindingen met verzender en ontvanger)*
+### *2 Via Knooppunt A (waarbij eigen OIN van A gebruikt wordt voor TLS verbindingen met verzender en ontvanger)*
 
 In deze situatie verloopt de communicatie via een knooppunt A.
 
@@ -127,34 +124,33 @@ Wanneer A een SAAS partij is is een aandachtspunt bij de communicatie van verzen
 
 Bij de communicatie van SAAS partij naar ontvanger zijn de afspraken rond machtiging relevant. In deze situatie gebruikt de SAAS partij het eigen OIN in het TLS certificaat, De ontvanger zal dit moeten accepteren en de oorspronkelijke verzender afleiden uit de afspraken, de bericht header of inhoud of op basis van end-to-end signing met een signing certificaat van de verzender.
 
-*3 Via Knooppunt A (waarbij A (Sub)OIN van verzender gebruikt voor TLS verbindingen met ontvanger)*
+### *3 Via Knooppunt A (waarbij A (Sub)OIN van verzender gebruikt voor TLS verbindingen met ontvanger)*
 
 In deze situatie wordt een knooppunt (bv SAAS partij) gemachtigd om namens verzender te communiceren door het verstrekken van een certificaat van de verzender aan deze partij. De verzender kan dit certificaat intrekken wanneer het knooppunt niet langer is toegestaan om dit te gebruiken. Aandachtspunt is het certificaat dmv subOIN fijnmazig te definiëren om misbruik uit te sluiten.
 
-*4 Via Knooppunt B (waarbij B eigen OIN van B gebruikt voor TLS verbindingen met verzender)*
+### *4 Via Knooppunt B (waarbij B eigen OIN van B gebruikt voor TLS verbindingen met verzender)*
 
 In deze situatie is B gemachtigd om berichten te ontvangen en door te geven aan ontvanger;
 
 Hierbij gelden vergelijkbare aandachtspunten als bij punt 2;
 
-*5 Via Knooppunt B (waarbij B (Sub)OIN van ontvanger gebruikt voor TLS verbindingen met verzender )*
+### *5 Via Knooppunt B (waarbij B (Sub)OIN van ontvanger gebruikt voor TLS verbindingen met verzender )*
 
 In deze situatie wordt een knooppunt (bv SAAS partij) gemachtigd om namens ontvanger te communiceren door het verstrekken van een certificaat van de ontvanger aan deze partij.
 
 Hierbij gelden vergelijkbare aandachtspunten als bij punt 3;
 
-*6 Via Knooppunt A en B (met gebruik van eigen OIN A,B voor TLS verbindingen)*
+### *6 Via Knooppunt A en B (met gebruik van eigen OIN A,B voor TLS verbindingen)*
 
 A en B maken verbinding via het eigen TLS certificaat. Aandachtspunt is daarom het machtigen van deze partijen om te acteren in de keten. Routering kan op basis van afspraken, de bericht header of bericht inhoud of op basis van end-to-end signing met een signing certificaat van de verzender/ontvanger. Specifiek is dat ook Knooppunt A en B elkaar moeten 'vertrouwen' in de communicatie.
 
-*7 Via Knooppunt A en B (met gebruik van OIN verzender, ontvanger voor TLS verbindingen)*
+### *7 Via Knooppunt A en B (met gebruik van OIN verzender, ontvanger voor TLS verbindingen)*
 
 In deze situatie worden knooppunten (bv SAAS partijen) gemachtigd om namens ontvanger te communiceren door het verstrekken van een certificaat van de ontvanger aan deze partij. Hierbij gelden vergelijkbare aandachtspunten als bij punt 3;
 
 
 
-Bijlage 1. Voorbeeld van routering
-=====================================
+# Bijlage 1. Voorbeeld van routering
 
 
 In deze handreiking hebben we een aantal scenario's uitgewerkt. De scenario's zijn hier in detail uitgewerkt.
@@ -178,7 +174,7 @@ In deze handreiking hebben we een aantal scenario's uitgewerkt. De scenario's zi
 
 
 
-**BIJLAGE Digipoort**
+# BIJLAGE 2. Digipoort
 
 **Digipoort -- Routeermechanisme (vereenvoudigd)**
 
