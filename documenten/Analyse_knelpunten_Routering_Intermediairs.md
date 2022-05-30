@@ -67,7 +67,7 @@ Nadeel van deze manier van werken is dat de SAAS leverancier over een 'sleutelbo
 
 ### **3 Bevoegdheid intermediair/SAAS partij door 'machtigen'**
 
-3a. In dit geval acteert de SAAS partij onder het eigen OIN, Voor partij B is het duidelijk dat zij communiceren met de SAAS partij. Onderling afspraken bepalen of de SAAS partij gemachtigd is om namens A bepaalde diensten te gebruiken;
+3a. In dit geval acteert de SAAS partij onder het eigen OIN, Voor partij B is het duidelijk dat zij communiceren met de SAAS partij. Onderlinge afspraken bepalen of de SAAS partij gemachtigd is om namens A bepaalde diensten te gebruiken;
 
 3b. Gebruik van een machtigingen register
 
