@@ -1,18 +1,16 @@
 # Analyse knelpunten Routering en Intermediairs 
 
 
-Introductie
-===========
+# Introductie
+
 
 Het is binnen overheidsketens steeds gebruikelijker om gebruik te maken van dienstverlening vanuit de Cloud, en diensten af te nemen van SAAS leveranciers. Dit heeft impact op vragen als wat is het endpoint in een keten, wie is de oorspronkelijker aanbieder of uiteindelijke ontvanger, hoe herken ik die en hoe weet ik dit zeker. Digikoppeling biedt met signing en encryptie tools aan, sommige sectoren hebben voorzieningen ontwikkeld, die bovenstaande vragen deels beantwoorden, andere partijen zijn zoekende hoe om te gaan met de nieuwe situatie.
 
 Dit document gaat in op de knelpunten en oplossingsrichtingen m.b.t. routering.
 
-Intermediairs & SAAS
-====================
+# Intermediairs & SAAS
 
-Definitie Intermediair
-----------------------
+## Definitie Intermediair
 
 *Een intermediair is een organisatie **die tussen twee (of meer) partijen berichten via Digikoppeling ontvangt en routeert**. Een intermediair kan dienen als sectoraal knooppunt, waarbij de intermediair meerdere partijen in een samenwerkingsverband ontzorgt en ondersteunt.*
 
@@ -26,8 +24,7 @@ Definitie Intermediair
 
 *Bron:* [Digikoppeling Architectuur 2.0 ](https://publicatie.centrumvoorstandaarden.nl/dk/architectuur/#intermediairs)
 
-Definitie van SAAS
-------------------
+## Definitie van SAAS
 
 _**Software as a service**, vaak afgekort als **SaaS**, ook weleens **software on demand** genoemd, is software die als een online dienst wordt aangeboden. De klant hoeft de software niet aan te schaffen, maar sluit bijvoorbeeld een contract per maand per gebruiker af, eventueel in combinatie met andere parameters. De SaaS-aanbieder zorgt voor installatie, onderhoud en beheer, de gebruiker benadert de software over het internet bij de SaaS-aanbieder._
 
@@ -37,8 +34,7 @@ Kenmerken:
 
 - *De software en hardware wordt niet bij de klant geïnstalleerd, maar bij de ASP / SaaS-aanbieder. De klant heeft toegang tot de software via internet of een privénetwerk.*
 
-Knelpunten
-----------
+## Knelpunten
 
 Knelpunten bij gebruik van intermediairs / SAAS oplossingen zijn:
 
@@ -46,10 +42,9 @@ Knelpunten bij gebruik van intermediairs / SAAS oplossingen zijn:
 - Hoe adresseer je de uiteindelijk bestemming
 - Hoe regel je identificatie en authenticatie van partijen in een keten
 
-Oplossingen
------------
+## Oplossingen
 
-## **1 Bevoegdheid intermediair via afspraken**
+### **1 Bevoegdheid intermediair via afspraken**
 
 ![intermediair](intermediair.jpg) 
 
@@ -58,7 +53,7 @@ Een intermediair in de rol van 'knooppunt' krijgt de bevoegdheid om dienst van B
 
 (Bron: [Digikoppeling Identificatie en Authenticatie 1.4.2 ](https://publicatie.centrumvoorstandaarden.nl/dk/idauth/) )
 
-## **2 Bevoegdheid intermediair/SAAS partij door verlenen certificaat**
+### **2 Bevoegdheid intermediair/SAAS partij door verlenen certificaat**
 
 Organisatie A geeft een certificaat aan de SAAS partij waarmee de SAAS partij zich naar buiten toe identificeert als A. Voor partij B is het dan alsof deze direct met A communiceert
 
@@ -70,7 +65,7 @@ Nadeel van deze manier van werken is dat de SAAS leverancier over een 'sleutelbo
 
 (Dit vraagt om specifieke aandacht voor certificaatbeheer en beveiligingsaspecten / mogelijk misbruik, denk hierbij bv aan het intrekken van een machtiging)
 
-## **3 Bevoegdheid intermediair/SAAS partij door 'machtigen'**
+### **3 Bevoegdheid intermediair/SAAS partij door 'machtigen'**
 
 3a. In dit geval acteert de SAAS partij onder het eigen OIN, Voor partij B is het duidelijk dat zij communiceren met de SAAS partij. Onderling afspraken bepalen of de SAAS partij gemachtigd is om namens A bepaalde diensten te gebruiken;
 
@@ -80,6 +75,7 @@ De SAAS partij identificeert zich met het eigen OIN. In het machtigingen registe
 
 ![machtigen](machtigen.jpg)
 
-In de handreiking Adressering en Routering zijn de verschillende mogelijkheden meer in detail uitgewerkt.
+In de handreiking Adressering en Routering zijn de verschillende mogelijkheden meer in detail uitgewerkt:
 
-(Zie link)
+Zie Handreiking Digikoppeling Adressering en Routering:
+https://github.com/Logius-standaarden/Digikoppeling-Handreiking-Adressering-en-Routering/blob/main/main.md
