@@ -154,7 +154,7 @@ In deze handreiking hebben we een aantal scenario's uitgewerkt. De scenario's zi
 
 ## Voorbeeldsituatie: zowel zender als ontvanger maken gebruik van subOIN's
 
-![adressering - zowel zender als ontvanger maken gebruik van subOIN's](media/adressering2.png)
+![adressering - zowel zender als ontvanger maken gebruik van subOIN's](media/OIN.scenario1.svg)
 
 | 1           | Zendende Partij                 | Ontvangende  Partij              | Via         | OIN in Certificaat Zender (tbv TLS) | OIN in Certificaat Ontvanger (tbv TLS) | OIN in HEADER FROM| OIN in HEADER TO    | Endpoint Zender | Endpoint Ontvanger|
 | ----------- | ------------------------- | ------------------------- | ----------- | ------------------------- | ------ | ------ | --------- | -------- | -------- |
