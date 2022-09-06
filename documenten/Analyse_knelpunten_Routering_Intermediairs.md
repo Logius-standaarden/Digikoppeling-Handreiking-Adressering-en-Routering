@@ -34,6 +34,11 @@ Kenmerken:
 
 - *De software en hardware wordt niet bij de klant geïnstalleerd, maar bij de ASP / SaaS-aanbieder. De klant heeft toegang tot de software via internet of een privénetwerk.*
 
+# Identificatie van organisaties met OIN
+
+Het OIN (Organisatie Identificatie Nummer) wordt gebruikt om organisaties te identificeren (zie ook [OIN Stelsel](https://publicatie.centrumvoorstandaarden.nl/dk/oin/)
+Het SubOIN is een afgeleide van het OIN en is opgesteld volgens de OIN-nummersystematiek en wordt gebruikt voor een organisatieonderdeel, samenwerkingsverband of voorziening. SubOIN's kunnen worden gebruikt om fijnmazig te identificeren.(Aan een OIN kunnen meerdere SubOIN gekoppeld worden).
+
 ## Knelpunten
 
 Knelpunten bij gebruik van intermediairs / SAAS oplossingen zijn:
@@ -67,11 +72,11 @@ Nadeel van deze manier van werken is dat de SAAS leverancier over een 'sleutelbo
 
 ### **3 Bevoegdheid intermediair/SAAS partij door 'machtigen'**
 
-3a. In dit geval acteert de SAAS partij onder het eigen OIN, Voor partij B is het duidelijk dat zij communiceren met de SAAS partij. Onderlinge afspraken bepalen of de SAAS partij gemachtigd is om namens A bepaalde diensten te gebruiken;
+3a. In dit geval acteert de SAAS partij onder het eigen OIN / SubOIN, Voor partij B is het duidelijk dat zij communiceren met de SAAS partij. Onderlinge afspraken bepalen of de SAAS partij gemachtigd is om namens A bepaalde diensten te gebruiken;
 
 3b. Gebruik van een machtigingen register
 
-De SAAS partij identificeert zich met het eigen OIN. In het machtigingen register kan worden nagegaan of de SAAS partij geautoriseerd is om bepaalde diensten namens een organisatie te verrichten.
+De SAAS partij identificeert zich met het eigen OIN / SubOIN. In het machtigingen register kan worden nagegaan of de SAAS partij geautoriseerd is om bepaalde diensten namens een organisatie te verrichten.
 
 ![machtigen](machtigen.jpg)
 
