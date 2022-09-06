@@ -37,9 +37,9 @@ Kenmerken:
 # Identificatie van organisaties met OIN
 
 Het OIN (Organisatie Identificatie Nummer) wordt gebruikt om organisaties te identificeren (zie ook [OIN Stelsel](https://publicatie.centrumvoorstandaarden.nl/dk/oin/)
-Het SubOIN is een afgeleide van het OIN en is opgesteld volgens de OIN-nummersystematiek en wordt gebruikt voor een organisatieonderdeel, samenwerkingsverband of voorziening. SubOIN's kunnen worden gebruikt om fijnmazig te identificeren.(Aan een OIN kunnen meerdere SubOIN gekoppeld worden).
+Het SubOIN is een afgeleide van het OIN en is opgesteld volgens de OIN-nummersystematiek en wordt gebruikt voor een organisatieonderdeel, samenwerkingsverband of voorziening. SubOIN's kunnen worden gebruikt om fijnmazig te identificeren. (Aan een OIN kunnen meerdere SubOIN's gekoppeld worden).
 
-## Knelpunten
+# Knelpunten
 
 Knelpunten bij gebruik van intermediairs / SAAS oplossingen zijn:
 
@@ -47,9 +47,9 @@ Knelpunten bij gebruik van intermediairs / SAAS oplossingen zijn:
 - Hoe adresseer je de uiteindelijk bestemming
 - Hoe regel je identificatie en authenticatie van partijen in een keten
 
-## Oplossingen
+# Oplossingen
 
-### **1 Bevoegdheid intermediair via afspraken**
+## **1 Bevoegdheid intermediair via afspraken**
 
 ![intermediair](intermediair.jpg) 
 
@@ -58,7 +58,7 @@ Een intermediair in de rol van 'knooppunt' krijgt de bevoegdheid om dienst van B
 
 (Bron: [Digikoppeling Identificatie en Authenticatie 1.4.2 ](https://publicatie.centrumvoorstandaarden.nl/dk/idauth/) )
 
-### **2 Bevoegdheid intermediair/SAAS partij door verlenen certificaat**
+## **2 Bevoegdheid intermediair/SAAS partij door verlenen certificaat**
 
 Organisatie A geeft een certificaat aan de SAAS partij waarmee de SAAS partij zich naar buiten toe identificeert als A. Voor partij B is het dan alsof deze direct met A communiceert
 
@@ -70,7 +70,7 @@ Nadeel van deze manier van werken is dat de SAAS leverancier over een 'sleutelbo
 
 (Dit vraagt om specifieke aandacht voor certificaatbeheer en beveiligingsaspecten / mogelijk misbruik, denk hierbij bv aan het intrekken van een machtiging)
 
-### **3 Bevoegdheid intermediair/SAAS partij door 'machtigen'**
+## **3 Bevoegdheid intermediair/SAAS partij door 'machtigen'**
 
 3a. In dit geval acteert de SAAS partij onder het eigen OIN / SubOIN, Voor partij B is het duidelijk dat zij communiceren met de SAAS partij. Onderlinge afspraken bepalen of de SAAS partij gemachtigd is om namens A bepaalde diensten te gebruiken;
 
