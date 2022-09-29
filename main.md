@@ -1,5 +1,5 @@
 # Handreiking Adressering en Routering
-_Status : Draft_
+
 
 # Doel van de Handreiking
 
