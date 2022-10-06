@@ -71,13 +71,9 @@ De Digikoppelingstandaard beschrijft per Profiel – ebMS, WUS of REST API – o
 
 3. REST API: in de querystring van de HTTP-operatie (of in het bericht)
 
-<aside class="note">
   
-  
-Zender en ontvanger worden vastgelegd met een "to" en een "from" parameter, In [Bijlage 1](#bijlage-1-voorbeeld-van-routering) vindt u een uitgebreid voorbeeld
+ >Zender en ontvanger kunnen hier worden vastgelegd met een "to" en een "from" parameter, dit maakt het mogelijk om ook bij gebruik van intermediairs aan te geven wat de oorspronkelijke afzender - of eindbestemming is  .  In [Bijlage 1](#bijlage-1-voorbeeld-van-routering) vindt u een uitgebreid voorbeeld.
 
-
-</aside> 
 
 - *Kunnen er in certificaat en header verschillende OIN's gebruikt worden?*
 
