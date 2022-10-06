@@ -47,7 +47,7 @@ var respecConfig = {
   ],
   // shortName = korte naam voor in de url van het document, gebruik alleen letters, cijfers en eventueel '-'
   // url van de github repository waar je in werkt
-  github: "https://github.com/Logius-standaarden/Digikoppeling-Handreiking-Adressering-en-Routering"
+  github: "https://github.com/Logius-standaarden/Digikoppeling-Handreiking-Adressering-en-Routering",
 
 
 
