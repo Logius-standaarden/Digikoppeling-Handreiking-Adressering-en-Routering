@@ -92,7 +92,7 @@ var respecConfig = {
   // class style can be automatically insertd in generated markdown tables
   // currently defaults to simple, but this may change
   // options simple, data, <your css>    
-  nl_markdownTableClass: "dkkvs",
+  // nl_markdownTableClass: "dkkvs",
 
   nl_markdownCodeClass: "code",
 
