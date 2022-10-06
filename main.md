@@ -74,7 +74,7 @@ De Digikoppelingstandaard beschrijft per Profiel – ebMS, WUS of REST API – o
 <aside class="note">
   
   
-Zender en ontvanger worden vastgelegd met een "to" en een "from" parameter, In [Bijlage 1](#bijlage-1) vindt u een uitgebreid voorbeeld
+Zender en ontvanger worden vastgelegd met een "to" en een "from" parameter, In [Bijlage 1](#bijlage-1-voorbeeld-van-routering) vindt u een uitgebreid voorbeeld
 
 
 </aside> 
