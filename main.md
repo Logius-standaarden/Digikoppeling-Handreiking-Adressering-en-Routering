@@ -71,8 +71,12 @@ De Digikoppelingstandaard beschrijft per Profiel – ebMS, WUS of REST API – o
 
 3. REST API: in de querystring van de HTTP-operatie (of in het bericht)
 
-<aside class="NOTE">
-Zender en ontvanger worden vastgelegd met een "to" en een "from" parameter, In [Bijlage 1](#) vindt u een uitgebreid voorbeeld
+<aside class="note">
+  
+  
+Zender en ontvanger worden vastgelegd met een "to" en een "from" parameter, In [Bijlage 1](#bijlage-1) vindt u een uitgebreid voorbeeld
+
+
 </aside> 
 
 - *Kunnen er in certificaat en header verschillende OIN's gebruikt worden?*
