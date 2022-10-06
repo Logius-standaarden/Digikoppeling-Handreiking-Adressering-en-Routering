@@ -7,13 +7,13 @@ var respecConfig = {
   // The specification's publish domain, which is used to publish the specification
   // the url in the header thisVersion is generated like `<conf.nl_organisationPublishURL>/<conf.pubDomain>/<specStatus>-<specType.toLowerCase()>-<conf.shortName>}-conf.publishDate>/`
   pubDomain: "dk",
-  shortName: "demo",
+  shortName: "bpadres",
 
   // Voor publishDate zie https://github.com/w3c/respec/wiki/publishDate
   // Als er geen publishDate is opgegeven, genereert ReSpec de datum o.b.v. de laatste wijzigingen
   // Belangrijk: als publishDate niet opgegeven is, wordt bij de link "Laatst gepubliceerde versie" "geen" gezet. Anders wordt een link opgebouwd voor de laatste versie, met het formaat:
   // https://publicatie.centrumvoorstandaarden.nl/{pubDomain}/{shortName}
-  publishDate: "2020-03-31",
+  publishDate: "2022-10-11",
 
   // Vul in om een korte extra uitleg te weergeven op de docs.centrumvoorstandaarden.nl website.
   // subExplanation: "",
@@ -33,14 +33,14 @@ var respecConfig = {
   doJsonLd: true,
   editors: [
     {
-      name: "Peter Haasnoot",
+      name: "Logius",
       company: "Logius",
       companyURL: "http://www.logius.nl/",
     },
   ],
   authors: [
     {
-      name: "Peter Haasnoot",
+      name: "Logius",
       company: "Logius",
       companyURL: "http://www.logius.nl/",
     },
@@ -53,7 +53,7 @@ var respecConfig = {
   alternateFormats: [
       {
       label: "pdf",
-      uri: "OIN-Stelsel.pdf",
+      uri: "Digikoppeling-Handreiking-Adressering-en-Routering.pdf",
     },
   ],
 
@@ -75,7 +75,8 @@ var respecConfig = {
   // if not set, the url's will be generated on the respecConfig.github automatically  
   nl_github: {
     //    issueBase: "https://github.com/Logius-standaarden/Digikoppeling-Wat-is-Digikoppeling/issues",
-    revision: "https://github.com/Logius-standaarden/DEMO-Stelsel",
+    revision: "https://github.com/Logius-standaarden/Digikoppeling-Handreiking-Adressering-en-Routering
+
     //  pullrequests: "https://github.com/Logius-standaarden/Digikoppeling-Wat-is-Digikoppeling/pulls"
   },
 
