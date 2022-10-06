@@ -47,7 +47,8 @@ var respecConfig = {
   ],
   // shortName = korte naam voor in de url van het document, gebruik alleen letters, cijfers en eventueel '-'
   // url van de github repository waar je in werkt
-  github: "https://github.com/Logius-standaarden/respec-test",
+  github: "https://github.com/Logius-standaarden/Digikoppeling-Handreiking-Adressering-en-Routering"
+
 
 
   alternateFormats: [
@@ -73,12 +74,12 @@ var respecConfig = {
   // in some cases the Repository of a Specification document and the Issue- and PR bases are split
   // thi scan be configured below
   // if not set, the url's will be generated on the respecConfig.github automatically  
-  nl_github: {
+//  nl_github: {
     //    issueBase: "https://github.com/Logius-standaarden/Digikoppeling-Wat-is-Digikoppeling/issues",
-    revision: "https://github.com/Logius-standaarden/Digikoppeling-Handreiking-Adressering-en-Routering
+  //  revision: "https://github.com/Logius-standaarden/Digikoppeling-Handreiking-Adressering-en-Routering
 
     //  pullrequests: "https://github.com/Logius-standaarden/Digikoppeling-Wat-is-Digikoppeling/pulls"
-  },
+ // },
 
   // nl_organisationName is used for some company specific values in the header (and Sotd)
   // currently supported: Logius and Geonovum (default)  
