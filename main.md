@@ -57,7 +57,7 @@ Voor de authenticatie van de zender en de ontvanger in het berichtenverkeer tuss
 
 Naast het OIN is ook het endpoint van belang. Het endpoint is de URL van de service die benaderd wordt. In Digikoppeling ebMS wordt het endpoint in het CPA vastgelegd. In WUS is dit onderdeel van het WS-addressing deel in de SOAP-header. Voor asynchroon verkeer (ebMS) moet ook de endpoint van de zender bekend zijn. Voor REST API-aanroepen wordt het endpoint in de URL van de HTTP-actie aangegeven.
 
-Adresseren en Routeren vindt plaats op het niveau van de berichtheader (en eventueel berichtbody). Voor het routeren kan gebruik gemaakt worden van het OIN, het opgegeven endpointadres of beide. 
+Adresseren en Routeren vindt plaats op het niveau van de berichtheader. Voor het routeren kan gebruik gemaakt worden van het OIN, het opgegeven endpointadres of beide. 
 
 - *Op welke plek wordt het OIN gebruikt?*
 
@@ -67,10 +67,9 @@ De Digikoppelingstandaard beschrijft per Profiel – ebMS, WUS of REST API – o
 
 1. ebMS: OIN van zender en ontvanger worden vastgelegd als PartyId in het CPA (berichtencontract). De ebMS-berichtenheader wordt gegenereerd op basis van de CPA.
 
-2. WUS: in de querystring van de endpointuri in de SOAP ws-addressing header
+2. WUS: in de querystring van de endpointuri in de SOAP ws-addressing header.
 
-3. REST API: in de querystring van de HTTP-operatie (of in het bericht)
-
+3. REST API: in de querystring van de HTTP-operatie.
   
  >Zender en ontvanger kunnen hier worden vastgelegd met een "to" en een "from" parameter, dit maakt het mogelijk om ook bij gebruik van intermediairs aan te geven wat de oorspronkelijke afzender - of eindbestemming is  .  In [Bijlage 1](#bijlage-1-voorbeeld-van-routering) vindt u een uitgebreid voorbeeld.
 
