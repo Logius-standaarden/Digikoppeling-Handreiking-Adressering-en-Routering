@@ -81,6 +81,10 @@ In het meest eenvoudige geval wisselen organisaties onderling berichten uit zond
 
 Indien gebruik wordt gemaakt van knooppunten (of SAAS)  zijn er meerdere varianten mogelijk. Het berichtenverkeer van een organisatie die een SAAS-oplossing gebruikt kan gebruikmaken van het certificaat van die SAAS-provider of bij de SAAS-provider een eigen certificaat deponeren, zodat de SAAS-provider het juiste certificaat selecteert als een bericht namens de zender wordt gestuurd.
 
+> De optie om een generiek eigen certificaat bij de SAAS leverancier te deponeren is onwenselijk, immers de SAAS leverancier verkrijgt op deze manier een sleutelbos van certificaten
+> Zie ook : [Analyse Knelpunten Routering](https://github.com/Logius-standaarden/Digikoppeling-Handreiking-Adressering-en-Routering/blob/main/documenten/Analyse_knelpunten_Routering_Intermediairs.md#2-bevoegdheid-intermediairsaas-partij-door-verlenen-certificaat).
+> Een optie is om te werken met een certificaat met een beperkte specifieke scope op basis van Sub-OIN om risico's te beperken.
+
 Een vergelijkbare situatie treedt op als een bericht naar een knooppunt wordt verstuurd, die het ontvangen bericht doorrouteert naar de uiteindelijke bestemming.
 
 Het OIN dat wordt gebruikt in de berichtenheader kan afwijken van het OIN in het certificaat. In het geval dat een bericht wordt gestuurd naar een knooppunt dat het bericht verder doorstuurt binnen de eigen of een andere organisatie kan dit OIN uit de berichtenheader wordt gebruikt door het knooppunt als middel om het bericht te routeren. Naast routeren op basis van het OIN wordt ook gebruik gemaakt  van endpointadressen.
