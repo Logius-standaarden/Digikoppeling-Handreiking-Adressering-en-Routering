@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 32.1.10 Logius profile 20220628">
+<meta name="generator" content="ReSpec 32.1.10">
 <style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
@@ -27,7 +27,7 @@ dfn{cursor:pointer}
       
 <link rel="shortcut icon" type="image/x-icon" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/logius.ico">
       
-<title>Digikoppeling Handreiking Adressering en Routering 1.0</title>
+<title>Digikoppeling Handreiking Adressering en Routering 1.0.1</title>
       
       
       
@@ -107,7 +107,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "shortName": "bpadres",
   "publishDate": "2022-10-11",
   "addSectionLinks": true,
-  "publishVersion": "1.0",
+  "publishVersion": "1.0.1",
   "previousPublishVersion": "1.0",
   "license": "cc-by-nd",
   "doJsonLd": true,
@@ -194,7 +194,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <link rel="stylesheet" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/LS-VG.css"></head>
    <body class="h-entry informative toc-inline"><div class="head">
     <a class="logo" href="https://www.logius.nl/standaarden"><img alt="Logius" height="77" id="Logius" src="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/figure-logius.svg" width="44">
-  </a> <h1 id="title" class="title">Digikoppeling Handreiking Adressering en Routering 1.0</h1>
+  </a> <h1 id="title" class="title">Digikoppeling Handreiking Adressering en Routering 1.0.1</h1>
     
     <h2>
       Logius Handreiking<br>
@@ -203,7 +203,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
-              <a class="u-url status" href="https://publicatie.centrumvoorstandaarden.nl/dk/bpadres/1.0">https://publicatie.centrumvoorstandaarden.nl/dk/bpadres/1.0</a>
+              <a class="u-url status" href="https://publicatie.centrumvoorstandaarden.nl/dk/bpadres/1.0.1">https://publicatie.centrumvoorstandaarden.nl/dk/bpadres/1.0.1</a>
             </dd><dt>Laatst gepubliceerde versie:</dt><dd>
               <a href="https://publicatie.centrumvoorstandaarden.nl/dk/bpadres/">https://publicatie.centrumvoorstandaarden.nl/dk/bpadres/</a>
             </dd>
@@ -294,7 +294,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </ul>
 <p>Voor de authenticatie van de zender en de ontvanger in het berichtenverkeer tussen overheidspartijen worden PKIo-certificaten gebruikt. Het PKIo-certificaat wordt zowel gebruikt om het transport van de berichten veilig te laten verlopen (gebruikmakend van het TLS-protocol) als voor authenticatie. Bij het gebruik van Digikoppeling wordt tweezijdige authenticatie vereist. Zender en ontvanger moeten elkaars certificaat vertrouwen en elkaars publieke TLS-sleutel kennen.</p>
 <p>Naast het OIN is ook het endpoint van belang. Het endpoint is de URL van de service die benaderd wordt. In Digikoppeling ebMS wordt het endpoint in het CPA vastgelegd. In WUS is dit onderdeel van het WS-addressing deel in de SOAP-header. Voor asynchroon verkeer (ebMS) moet ook de endpoint van de zender bekend zijn. Voor REST API-aanroepen wordt het endpoint in de URL van de HTTP-actie aangegeven.</p>
-<p>Adresseren en Routeren vindt plaats op het niveau van de berichtheader (en eventueel berichtbody).&nbsp;Voor het routeren kan gebruik gemaakt worden van het OIN, het opgegeven endpointadres of beide.&nbsp;</p>
+<p>Adresseren en Routeren vindt plaats op het niveau van de berichtheader.&nbsp;Voor het routeren kan gebruik gemaakt worden van het OIN, het opgegeven endpointadres of beide.&nbsp;</p>
 <ul>
 <li><em>Op welke plek wordt het OIN gebruikt?</em></li>
 </ul>
@@ -303,9 +303,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <ol>
 <li><p>ebMS: OIN van zender en ontvanger worden vastgelegd als PartyId in het&nbsp;CPA (berichtencontract). De ebMS-berichtenheader wordt gegenereerd op basis van de CPA.</p>
 </li>
-<li><p>WUS: in de querystring van de endpointuri in de SOAP ws-addressing header</p>
+<li><p>WUS: in de querystring van de endpointuri in de SOAP ws-addressing header.</p>
 </li>
-<li><p>REST API: in de querystring van de HTTP-operatie (of in het bericht)</p>
+<li><p>REST API: in de querystring van de HTTP-operatie.</p>
 </li>
 </ol>
 <blockquote>
