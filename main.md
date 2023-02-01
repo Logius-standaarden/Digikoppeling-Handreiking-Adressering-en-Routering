@@ -85,7 +85,7 @@ Een vergelijkbare situatie treedt op als een bericht naar een knooppunt wordt ve
 
 Het OIN dat wordt gebruikt in de berichtenheader kan afwijken van het OIN in het certificaat. In het geval dat een bericht wordt gestuurd naar een knooppunt dat het bericht verder doorstuurt binnen de eigen of een andere organisatie kan dit OIN uit de berichtenheader wordt gebruikt door het knooppunt als middel om het bericht te routeren. Naast routeren op basis van het OIN wordt ook gebruik gemaakt  van endpointadressen.
 
->Bij gebruik van Knooppunten (of SAAS leveranciers) is het van belang de bevoegdheid (en de gegevensverantwoordelijke) te kunnen vaststellen, in [Analyse Knelpunten Routering](https://github.com/Logius-standaarden/Digikoppeling-Handreiking-Adressering-en-Routering/blob/main/documenten/Analyse_knelpunten_Routering_Intermediairs.md#oplossingen) worden de mogelijkheden hiervoor beschreven.
+>Bij gebruik van Knooppunten (of SAAS leveranciers) is het van belang de bevoegdheid (en de gegevensverantwoordelijke) te kunnen vaststellen, in [Bijlage 3 : Analyse Knelpunten Routering](#bijlage-3-analyse-knelpunten-routering-en-intermediairs) worden de mogelijkheden hiervoor beschreven.
 
 **Routeringstabel**
 
@@ -298,9 +298,6 @@ De SAAS partij identificeert zich met het eigen OIN / SubOIN. In het machtiginge
 
 ![machtigen](media/machtigen.jpg)
 
-In de handreiking Adressering en Routering zijn de verschillende mogelijkheden meer in detail uitgewerkt:
 
-Zie Handreiking Digikoppeling Adressering en Routering:
-https://github.com/Logius-standaarden/Digikoppeling-Handreiking-Adressering-en-Routering/blob/main/main.md
 
 
