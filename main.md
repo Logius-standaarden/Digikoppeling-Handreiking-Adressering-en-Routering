@@ -49,7 +49,7 @@ Als ontvanger of zender geen gebruik willen maken van subOIN's moet de *afzender
 
 # Beschrijving van de werking
 
-## 1. Het OIN wordt zowel gebruikt voor authenticatie als voor adressering.
+## Het OIN wordt zowel gebruikt voor authenticatie als voor adressering.
 
 - *Hoe werkt dit precies?*
 
@@ -90,15 +90,15 @@ Het OIN dat wordt gebruikt in de berichtenheader kan afwijken van het OIN in het
 
 >Bij gebruik van Knooppunten (of SAAS leveranciers) is het van belang de bevoegdheid (en de gegevensverantwoordelijke) te kunnen vaststellen, in [Bijlage 3 : Analyse Knelpunten Routering](#bijlage-3-analyse-knelpunten-routering-en-intermediairs) worden de mogelijkheden hiervoor beschreven.
 
-**Routeringstabel**
+### Routeringstabel
 
 In veel gevallen wordt door het knooppunt een routeringstabel (of  mappingtabel) gebruikt. In de tabel wordt beschreven naar welk endpointadres een bericht wordt verstuurd op basis van het TO-adres dat in het bericht is vermeld.
 
-## 2. Wanneer is het aan te raden om subOIN's te gebruiken voor adresseren en routeren?
+## Wanneer is het aan te raden om subOIN's te gebruiken voor adresseren en routeren?
 
 Over het gebruik van subOIN's voor adresseren en routeren bestaan verschillende opvattingen. Sommige organisaties kennen verschillende digitale postbussen van organisatieonderdelen of voorzieningen en gebruiken subOIN's om deze digitale postbussen te identificeren. Andere organisaties willen het gebruik van OIN reserveren om Organisaties te identificeren en gebruiken voor het routeren van berichten binnen de organisatie ander kenmerken van het bericht. Het OIN-stelsel maakt het eenvoudiger om subOIN's aan te maken, maar legt de partijen geen verplicht patroon op hoe subOIN's gebruikt kunnen worden ten behoeve van adresseren en routeren. Partijen die met elkaar berichten uitwisselen zullen over het gebruik van subOIN's onderling afspraken moeten maken.
 
-## 3. Wat zijn de regels die partijen met elkaar moeten afspreken over het routeren en adresseren van berichten?
+## Wat zijn de regels die partijen met elkaar moeten afspreken over het routeren en adresseren van berichten?
 
 In deze handreiking zijn hieronder een aantal scenario's uitgewerkt: (zie ook bijlage 1).
 
@@ -121,11 +121,11 @@ In deze handreiking zijn hieronder een aantal scenario's uitgewerkt: (zie ook bi
 *2 Knooppunt B ontvangt 'namens' ontvanger
 
 
-### *1 Direct*
+### (Nr 1) Direct
 
 In deze situatie gebruikt de verzender het eigen (Sub)OIN als afzender en het (Sub)OIN van de ontvanger als bestemming. Identificatie en Authenticatie geschiedt op basis van de beide TLS-certificaten. Signing en encryptie kan gebruikt worden voor end-to-end beveiliging.
 
-### *2 Via Knooppunt A (waarbij eigen OIN van A gebruikt wordt voor TLS-verbindingen met verzender en ontvanger)*
+### (Nr 2) Via Knooppunt A (waarbij eigen OIN van A gebruikt wordt voor TLS-verbindingen met verzender en ontvanger)
 
 In deze situatie verloopt de communicatie via een knooppunt A.
 
@@ -133,27 +133,27 @@ Wanneer A een SAAS-partij is, is een aandachtspunt bij de communicatie van verze
 
 Bij de communicatie van SAAS-partij naar ontvanger zijn de afspraken rond machtiging relevant. In deze situatie gebruikt de SAAS-partij het eigen OIN in het TLS-certificaat. De ontvanger zal dit moeten accepteren en de oorspronkelijke verzender afleiden uit de afspraken, de bericht header of inhoud of op basis van end-to-end signing met een signingcertificaat van de verzender.
 
-### *3 Via Knooppunt A (waarbij A (Sub)OIN van verzender gebruikt voor TLS-verbindingen met ontvanger)*
+### (Nr 3) Via Knooppunt A (waarbij A (Sub)OIN van verzender gebruikt voor TLS-verbindingen met ontvanger)
 
 In deze situatie wordt een knooppunt (bijv. SAAS-partij) gemachtigd om namens verzender te communiceren door het verstrekken van een certificaat van de verzender aan deze partij. De verzender kan dit certificaat intrekken wanneer het knooppunt niet langer is toegestaan om dit te gebruiken. Aandachtspunt is het certificaat d.m.v. subOIN fijnmazig te definiëren om misbruik uit te sluiten.
 
-### *4 Via Knooppunt B (waarbij B eigen OIN van B gebruikt voor TLS-verbindingen met verzender)*
+### (Nr 4) Via Knooppunt B (waarbij B eigen OIN van B gebruikt voor TLS-verbindingen met verzender)
 
 In deze situatie is B gemachtigd om berichten te ontvangen en door te geven aan ontvanger;
 
 Hierbij gelden vergelijkbare aandachtspunten als bij punt 2.
 
-### *5 Via Knooppunt B (waarbij B (Sub)OIN van ontvanger gebruikt voor TLS-verbindingen met verzender)*
+### (Nr 5) Via Knooppunt B (waarbij B (Sub)OIN van ontvanger gebruikt voor TLS-verbindingen met verzender)
 
 In deze situatie wordt een knooppunt (bijv. SAAS-partij) gemachtigd om namens ontvanger te communiceren door het verstrekken van een certificaat van de ontvanger aan deze partij.
 
 Hierbij gelden vergelijkbare aandachtspunten als bij punt 3.
 
-### *6 Via Knooppunt A en B (met gebruik van eigen OIN A,B voor TLS verbindingen)*
+### (Nr 6) Via Knooppunt A en B (met gebruik van eigen OIN A,B voor TLS verbindingen)
 
 A en B maken verbinding via het eigen TLS-certificaat. Aandachtspunt is daarom het machtigen van deze partijen om te acteren in de keten. Routering kan op basis van afspraken, de berichtheader of berichtinhoud of op basis van end-to-end signing met een signing certificaat van de verzender/ontvanger. Specifiek is dat ook Knooppunt A en B elkaar moeten 'vertrouwen' in de communicatie.
 
-### *7 Via Knooppunt A en B (met gebruik van OIN verzender, ontvanger voor TLS verbindingen)*
+### (Nr 7) Via Knooppunt A en B (met gebruik van OIN verzender, ontvanger voor TLS verbindingen)
 
 In deze situatie worden knooppunten (bijv. SAAS-partijen) gemachtigd om namens ontvanger te communiceren door het verstrekken van een certificaat van de ontvanger aan deze partij. Hierbij gelden vergelijkbare aandachtspunten als bij punt 3.
 
@@ -270,7 +270,7 @@ Knelpunten bij gebruik van intermediairs / SAAS oplossingen zijn:
 
 ## Oplossingen
 
-### **1 Bevoegdheid intermediair via afspraken**
+### (1) Bevoegdheid intermediair via afspraken
 
 ![intermediair](media/intermediair.jpg) 
 
@@ -279,7 +279,7 @@ Een intermediair in de rol van 'knooppunt' krijgt de bevoegdheid om dienst van B
 
 (Bron: [Digikoppeling Identificatie en Authenticatie 1.4.2 ](https://publicatie.centrumvoorstandaarden.nl/dk/idauth/) )
 
-### **2 Bevoegdheid intermediair/SAAS partij door verlenen certificaat**
+### (2) Bevoegdheid intermediair/SAAS partij door verlenen certificaat
 
 Organisatie A geeft een certificaat aan de SAAS partij waarmee de SAAS partij zich naar buiten toe identificeert als A. Voor partij B is het dan alsof deze direct met A communiceert
 
@@ -291,7 +291,7 @@ Nadeel van deze manier van werken is dat de SAAS leverancier over een 'sleutelbo
 
 (Dit vraagt om specifieke aandacht voor certificaatbeheer en beveiligingsaspecten / mogelijk misbruik, denk hierbij bv aan het intrekken van een machtiging)
 
-### **3 Bevoegdheid intermediair/SAAS partij door 'machtigen'**
+### (3) Bevoegdheid intermediair/SAAS partij door 'machtigen'
 
 3a. In dit geval acteert de SAAS partij onder het eigen OIN / SubOIN, Voor partij B is het duidelijk dat zij communiceren met de SAAS partij. Onderlinge afspraken bepalen of de SAAS partij gemachtigd is om namens A bepaalde diensten te gebruiken;
 
