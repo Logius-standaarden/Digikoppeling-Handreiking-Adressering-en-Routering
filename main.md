@@ -243,7 +243,7 @@ Dit document gaat in op de knelpunten en oplossingsrichtingen m.b.t. routering.
 
 *(1): We beschouwen transparantie hier op de logistieke laag. Op technisch niveau is de intermediair een eindpunt omdat de TLS verbinding tussen twee servers moet worden opgezet.*
 
-*Bron:* [Digikoppeling Architectuur 2.0 ](https://publicatie.centrumvoorstandaarden.nl/dk/architectuur/#intermediairs)
+*Bron:* [Digikoppeling Architectuur 2.0 ](https://gitdocumentatie.logius.nl/publicatie/dk/architectuur/#intermediairs)
 
 ### Definitie van SAAS
 
@@ -257,7 +257,7 @@ Kenmerken:
 
 ## Identificatie van organisaties met OIN
 
-Het OIN (Organisatie Identificatie Nummer) wordt gebruikt om organisaties te identificeren (zie ook [OIN Stelsel](https://publicatie.centrumvoorstandaarden.nl/dk/oin/)
+Het OIN (Organisatie Identificatie Nummer) wordt gebruikt om organisaties te identificeren (zie ook [OIN Stelsel](https://gitdocumentatie.logius.nl/publicatie/dk/oin/)
 Het SubOIN is een afgeleide van het OIN en is opgesteld volgens de OIN-nummersystematiek en wordt gebruikt voor een organisatieonderdeel, samenwerkingsverband of voorziening. SubOIN's kunnen worden gebruikt om fijnmazig te identificeren. (Aan een OIN kunnen meerdere SubOIN's gekoppeld worden).
 
 ## Knelpunten
@@ -277,7 +277,7 @@ Knelpunten bij gebruik van intermediairs / SAAS oplossingen zijn:
 Een intermediair in de rol van 'knooppunt' krijgt de bevoegdheid om dienst van B af te nemen (op basis van of passend in toepasselijke regelgeving). Voor B blijft achterliggende partij A buiten beeld. Of A bevoegd is om de dienst via de Intermediair af te nemen bepaalt de Intermediair op basis van de regelgeving en verantwoordelijkheid;\
 (een voorbeeld is een sector loket)
 
-(Bron: [Digikoppeling Identificatie en Authenticatie 1.4.2 ](https://publicatie.centrumvoorstandaarden.nl/dk/idauth/) )
+(Bron: [Digikoppeling Identificatie en Authenticatie 1.4.2 ](https://gitdocumentatie.logius.nl/publicatie/dk/idauth/) )
 
 ### (2) Bevoegdheid intermediair/SAAS partij door verlenen certificaat
 
