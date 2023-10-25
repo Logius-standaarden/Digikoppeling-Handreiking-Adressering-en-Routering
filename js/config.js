@@ -20,6 +20,6 @@ var respecConfig = {
   publishDate: "2023-02-13",
   publishVersion: "1.1.0",
   shortName: "bpadres",
-  specStatus: "DEF",
+  specStatus: "WV",
   specType: "HR"
 };
