@@ -1,4 +1,6 @@
-var respecConfig = {
+import { loadRespecWithConfiguration } from "https://logius-standaarden.github.io/publicatie/respec/organisation-config.mjs";
+
+loadRespecWithConfiguration({
   alternateFormats: [ { 
         "label" : "pdf",
         "uri" : "Digikoppeling-Handreiking-Adressering-en-Routering.pdf"
@@ -22,4 +24,4 @@ var respecConfig = {
   shortName: "bpadres",
   specStatus: "WV",
   specType: "HR"
-};
+});
