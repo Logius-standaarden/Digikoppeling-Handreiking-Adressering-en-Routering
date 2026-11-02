@@ -2,15 +2,15 @@ import { loadRespecWithConfiguration } from "https://logius-standaarden.github.i
 
 loadRespecWithConfiguration({
   authors: [ { 
-        "company" : "Logius",
-        "companyURL" : "http://www.logius.nl/",
-        "name" : "Logius"
-      } ],
+    "company" : "Logius",
+    "companyURL" : "https://www.logius.nl",
+    "name" : "Logius"
+  } ],
   editors: [ { 
-        "company" : "Logius",
-        "companyURL" : "http://www.logius.nl/",
-        "name" : "Logius"
-      } ],
+    "company" : "Logius",
+    "companyURL" : "https://www.logius.nl",
+    "name" : "Logius"
+  } ],
   github: "https://github.com/Logius-standaarden/Digikoppeling-Handreiking-Adressering-en-Routering",
   nl_markdownCodeClass: "code",
   previousPublishVersion: "1.0.1",
